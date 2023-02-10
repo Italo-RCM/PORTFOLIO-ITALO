@@ -181,7 +181,7 @@ h1 {
 #sobre .div-02 {
     width: 50%;
     height: 300px; 
-    padding-top: 125px;
+    padding-top: 90px;
     align-items: center;
     font-family: "Prometo";
 }
@@ -204,6 +204,10 @@ h1 {
     position: relative;
     width: 70%;
     height: 300px; 
+}
+
+#sobre .div-p-01 {
+    padding-bottom: 30px;
 }
 
 #sobre .div-p {
