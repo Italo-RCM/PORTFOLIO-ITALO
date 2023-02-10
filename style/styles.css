@@ -1,0 +1,1172 @@
+@font-face {
+    font-family: "Prometo";
+    src: url("/FONTE/Prometo/Prometo-Medium.ttf")
+    format("truetype");
+    font-style: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "Jessicha";
+    src: url("/FONTE/Prometo/Jesicha\ Martine.otf")
+    format("opentype");
+    font-style: normal;
+    font-size: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #212529;
+    width: 100vw;
+}
+
+/* HEADER */
+
+header {
+    font-family: "Prometo";
+    /*font-family: "jessicha"; */
+}
+
+/* NAV */
+/*
+.nav-bar {
+    position: fixed;
+    width: 100vw;
+    height: 60px;    
+}
+
+.container-nav-bar {
+    background-color: #0086f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.ul-nav-bar {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    gap: 2rem;
+}
+
+.li-nav-bar {
+    text-align: center;
+}*/
+
+.nav-bar {
+    display: none;
+}
+
+#div-menu-mobile a {
+    color: white ;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#div-menu-mobile a:hover {
+    opacity: 07;
+};
+
+#div-menu-mobile .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#div-menu-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0086f4;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 8px;
+}
+
+/*00000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+a {
+    color:white;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: width .5s;
+}
+
+a:hover:before {
+    width: 100%;
+}
+
+/*IMAGEM*/
+
+#header-imagem {
+    width: 100vw;
+    height: 900px;
+    background-image: url("/imagens/IMAGEM\ -\ header.png");
+    background-size: cover;
+    background-position: center center;
+    display: flex; 
+}
+
+.boas-vindas {
+    width: 400px;
+    height: 250px;
+    margin-top: 450px;
+    margin-left: 200px;
+    font-size: 30PX;
+    text-align: center;
+}
+
+p {
+    color: white;
+    margin: 0;
+}
+ 
+h1 {
+    color: #0086f4;
+    font-family: "jessicha";
+    font-size: 80px;
+    margin: 0;
+    text-shadow: 
+    -2px -2px 0px #FFF, 
+    -2px 2px 0px #FFF,      
+     2px -2px 0px #FFF,    
+     2px 0px 0px #FFF;
+}
+
+/* MAIN TOTAL*/
+
+/* MAIN SOBRE */
+
+#sobre {
+    width: 100vw;
+    height: 800px;
+    background-color: #212529;
+}
+
+#sobre .div-h2-top {
+    width: 100vw;
+    height: 100px;
+    padding-top: 90px;
+}
+
+#sobre .div-sobre-centro {
+    width: 100vw;
+    height: 800px; 
+    display: flex; 
+}
+
+#sobre .div-total {
+    width: 50%;
+    position: relative;
+}
+
+#sobre .div-01 {
+    top: 10%;
+    left: 35%;
+    font-family: "Prometo";
+    position: absolute;
+}
+
+#sobre .div-02 {
+    width: 50%;
+    height: 300px; 
+    padding-top: 125px;
+    align-items: center;
+    font-family: "Prometo";
+}
+
+#sobre .p-nome-01 {
+    font-size: 20px;
+    color: #0086f4;
+    text-align: left;
+    font-family: "Prometo";
+}
+
+#sobre .p-nome-02 {
+    font-size: 15px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Prometo";
+}
+
+#sobre .div-p-total {
+    position: relative;
+    width: 70%;
+    height: 300px; 
+}
+
+#sobre .div-p {
+    margin-top: 40px;
+}
+
+#sobre .p-texto {
+    top: 10%;
+    left: 25%;
+    align-items: center;
+    font-family: "Prometo";
+    font-size: 20px;
+}
+
+/* MAIN HABILIDADES */
+
+#habilidades {
+    width: 100vw;
+    height: 700px;
+    background-color: #343a40;
+}
+
+#habilidades .div-h2 {
+    width: 100vw;
+    height: 100px;
+}
+
+#habilidades .div-principal {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+}
+
+#habilidades .div-01 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#habilidades .div-container-principal {
+    width: 700px;
+    height: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#habilidades .div-container:hover > :not(:hover) {
+    opacity: .4;
+    transform: scale(0.8);
+}
+
+#habilidades .item {
+    width: 120px;
+    height: 120px;
+    transition: .40s;
+    cursor: pointer;
+    margin: 12px;
+    flex: 1 1 150px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#habilidades .titulo-item {
+    width: 100%x;
+    height: 30px;
+}
+
+#habilidades .p-item {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Prometo";
+    color: #0086f4;
+}
+
+#habilidades .logo-item {
+    display: flex;
+    justify-content: center;
+}
+
+#habilidades .img-01 {
+    width: 59px;
+    height: 49px;
+    padding-top: 20px;
+} 
+#habilidades .img-02 {
+    width: 65px;
+    height: 51px;
+    padding-top: 20px;
+} 
+#habilidades .img-03 {
+    width: 78px;
+    height: 50px;
+    padding-top: 20px;
+} 
+#habilidades .img-04 {
+    width: 65px;
+    height: 52px;
+    padding-top: 20px;
+} 
+#habilidades .img-05 {
+    width: 72px;
+    height: 69px;
+    padding-top: 20px;
+} 
+#habilidades .img-06 {
+    width: 73px;
+    height: 70px;
+    padding-top: 20px;
+} 
+#habilidades .img-07 {
+    width: 58px;
+    height: 73px;
+    padding-top: 20px;
+} 
+#habilidades .img-08 {
+    width: 64px;
+    height: 74px;
+    padding-top: 20px;
+}
+
+#habilidades .div-02 {
+    width: 50%;
+    height: 100%;
+}
+
+#habilidades .div-p {
+    margin-top: 150px;
+    width: 70%;
+}
+
+#habilidades .p-texto {
+    top: 10%;
+    left: 25%;
+    font-family: "Prometo";
+    font-size: 20px;
+}
+
+/* MAIN QUALIFICACOES */
+
+#qualificacoes {
+    width: 100vw;
+    height: 600px;
+    background-color: #212529;
+    font-family: "Prometo";
+}
+
+#qualificacoes .div-h2-qualificacoes {
+    /*background-color: #0fd439;*/
+    width: 100%;
+    height: 250px;
+}
+
+#qualificacoes .div-barra-principal {
+    width: 100vw;
+    height: 400px;
+    /*background-color: #683a24;*/
+    display: flex;
+    justify-content: center;
+}
+
+#qualificacoes .div-principal {
+    width: 900px;
+    height: 100%;
+    /*background-color: #506824;*/
+    display: flex;
+}
+
+#qualificacoes .div-01 {
+    width: 40%;
+    height: 100%;
+    /*background-color: #246824;*/
+    text-align: end;
+}
+
+#qualificacoes .div-02 {
+    width: 25%;
+    height: 100%;
+    /*background-color: #682459;*/
+}
+
+#qualificacoes .div-03 {
+    width: 35%;
+    height: 100%;
+    /*background-color: #246824;*/
+    text-align: start;
+    padding-left: 28px;
+}
+
+#qualificacoes .div-p-barra {
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 1px;
+}
+
+.barra {
+    border-radius: 30px;
+    margin-top: 7px;
+}
+
+.div-barra {
+    width: 200px;
+    height: 10px;
+    background-color: #29343b;
+    border: 10px;
+    margin-bottom: 32px;
+    border-radius: 30px;
+}
+
+.div-barra .barra {
+   height: 100%;
+   background-color: #0086f4;
+   animation: progress-animation 40s ease-in-out;
+}
+
+@keyframes progress-animation{
+      from { width: 0%;
+      }
+      to { width: 100%;
+      }
+}
+
+/* MAIN TOTAL */
+
+.div-h2 {
+    width: 100vw;
+    height: 50px;
+    padding-top: 120px;
+}
+
+.texto-h2 {
+    font-size: 40px;
+    color: #0086f4;
+    font-family: "Prometo";
+    text-align: center;
+    margin-top: 0;
+}
+
+/* ÍCONE CORAÇÃO */
+.div-icone-pai {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.div-icone {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    background-color: #ffffff;
+    gap: 14px;
+    cursor: pointer;
+    user-select: none;
+    left: 45%;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    }
+   
+   input {
+    display: none;
+   }
+   
+   input:checked + label svg {
+    fill: hsl(0deg 100% 50%);
+    stroke: hsl(0deg 100% 50%);
+    animation: heartButton 1s;
+   }
+   
+   @keyframes heartButton {
+    0% {
+     transform: scale(1);
+    }
+   
+    25% {
+     transform: scale(1.3);
+    }
+   
+    50% {
+     transform: scale(1);
+    }
+   
+    75% {
+     transform: scale(1.3);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+   input + label .action {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+   }
+   
+   input + label .action span {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    transition: all .5s;
+   }
+   
+   input + label .action span.option-1 {
+    transform: translate(0px,0%);
+    opacity: 1;
+   }
+   
+   input:checked + label .action span.option-1 {
+    transform: translate(0px,-100%);
+    opacity: 0;
+   }
+   
+   input + label .action span.option-2 {
+    transform: translate(0px,100%);
+    opacity: 0;
+   }
+   
+   input:checked + label .action span.option-2 {
+    transform: translate(0px,0%);
+    opacity: 1;
+   }
+   
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    height: 400px;
+    background-color: #0086f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-footer .div-h2 {
+    margin-top: 50px;
+    padding-top: 80px;
+    margin-top: 0;
+    padding-bottom: 80px;
+}
+
+#div-footer h2 {
+    color: white;
+}
+
+#footer .div-icon {
+    height: 110px;
+    display: flex;
+}
+
+.tamanho-icon {
+    height: 55px;
+    padding-bottom: 0;
+}
+
+#footer i {
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 999px) {
+
+    .nav-list {
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        width:35vw;
+        height: 92vh;
+        background-color: #0086f4;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        padding-left: 0;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        } to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+      }
+      
+      .mobile-menu.active .line2 {
+        opacity: 0;
+      }
+      
+      .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+      }
+}
+
+/*LAYOUT CELULAR 360px*/
+
+@media screen and (max-width: 361px) {
+
+    body {
+        width: 360px;
+    }
+
+    header {
+        width: 100%;
+        height: 660px;
+    }
+
+    /*NAV MOBILE*/
+
+    .nav-list {
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        width: 55vw;
+        height: 92vh;
+        background-color: #0086f4;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+
+    }
+
+    /*.nav-bar {
+        display: none;
+    }
+
+    #div-menu-mobile a {
+        color: white ;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    #div-menu-mobile a:hover {
+        opacity: 07;
+    };
+
+    #div-menu-mobile .logo {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    #div-menu-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0086f4;
+        height: 8vh;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+        height: 50px;
+    }
+
+    .mobile-menu div{
+        width: 32px;
+        height: 2;
+        background-color: #ffffff;
+        margin: 8px;
+    }*/
+
+    /* IMAGEM */
+
+    #header-imagem {
+        width: 100%;
+        height: 100%;
+        background-image: url("/imagens/IMAGEM\ -\ header\ -\ MOBAIL.png");
+    }
+
+    .boas-vindas {
+        width: 200px;
+        height: 150px;
+        margin-top: 110px;
+        margin-left: 80px;
+        font-size: 15PX;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35PX;
+        text-shadow: 
+        -1px -1px 0px #FFF, 
+        -1px 1px 0px #FFF,      
+         1px -1px 0px #FFF,    
+         1px 0px 0px #FFF;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    /* MAIN */
+
+    /* SOBRE */
+
+    #sobre {
+        width: 100%;
+        height: 700px;
+        background-color: #212529;
+    }    
+    
+    #sobre .div-h2-top {
+        width: 100%;
+        height: 100px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #sobre .texto-h2 {
+        width: 150px;
+        font-size: 25px;
+        color: #0086f4;
+        font-family: "Prometo";
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #sobre .div-sobre-centro {
+        width: 100%;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #sobre .div-total {
+        width: 300px;
+        height: 200px;
+    }
+    
+    #sobre .div-01 {
+        top: 50px;
+        left: 0;
+    }
+    
+    #sobre .div-02 {
+        width: 300px;
+        height: 50%; 
+        font-family: "Prometo";
+        padding-top: 50px;
+    }
+    
+    #sobre .p-nome-01 {
+        font-size: 20px;
+        color: #0086f4;
+        text-align: left;
+        font-family: "Prometo";
+    }
+    
+    #sobre .p-nome-02 {
+        font-size: 15px;
+        color: #ffffff;
+        text-align: left;
+        font-family: "Prometo";
+    }
+    
+    #sobre .div-p-total {
+        width: 100%;
+        height: 300px; 
+    }
+    
+    #sobre .div-p {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    #sobre .div-p-01 {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 40px;
+    }
+    
+    #sobre .p-texto {
+        top: 10%;
+        left: 25%;
+        align-items: center;
+        font-family: "Prometo";
+        font-size: 15px;
+    }
+
+    /* habilidades */
+
+    #habilidades {
+        width: 100vw;
+        height: 850px;
+    }
+
+    #habilidades .div-h2 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #habilidades .texto-h2 {
+        width: 50%;
+    }
+
+    #habilidades .div-principal {
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #habilidades .div-01 {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    #habilidades .div-container-principal {
+        width: 100vw;
+        height: 500px;
+        padding-top: 0px;
+        padding-left:0px ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #habilidades .div-container {
+        width: 250px;
+    }
+    
+    #habilidades .div-container:hover > :not(:hover) {
+        opacity: .4;
+        transform: scale(0.8);
+    }
+    
+    #habilidades .item {
+        width: 80px;
+        height: 80px;
+        transition: .40s;
+        cursor: pointer;
+        margin: 12px;
+        flex: 1 1 150px;
+        display: inline-block;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+    
+    #habilidades .titulo-item {
+        width: 100px;
+        height: 30px;
+    }
+    
+    #habilidades .p-item {
+        text-align: center;
+        padding-top: 20px;
+        font-family: "Prometo";
+        color: #0086f4;
+        font-size: 15px;
+    }
+    
+    #habilidades .logo-item {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #habilidades .img-01 {
+        width: 49px;
+        height: 39px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-02 {
+        width: 55px;
+        height: 41px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-03 {
+        width: 68px;
+        height: 40px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-04 {
+        width: 55px;
+        height: 42px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-05 {
+        width: 62px;
+        height: 59px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-06 {
+        width: 63px;
+        height: 60px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-07 {
+        width: 48px;
+        height: 63px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-08 {
+        width: 54px;
+        height: 64px;
+        padding-top: 20px;
+    }
+    
+    #habilidades .div-02 {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #habilidades .div-p {
+        margin-top: 13px;
+        width: 260px;
+        padding-left: 40px;
+    }
+    
+    #habilidades .p-texto {
+        top: 10%;
+        left: 25%;
+        font-family: "Prometo";
+        font-size: 15px;
+    }
+
+    /* QUALIFICAÇÕES */
+
+    #qualificacoes {
+        width: 100vw;
+        height: 500px;
+        background-color: #212529;
+        font-family: "Prometo";
+    }
+    
+    #qualificacoes .div-h2-qualificacoes {
+        /*background-color: #0fd439;*/
+        width: 100%;
+        height: 150px;
+    }
+    
+    #qualificacoes .div-barra-principal {
+        width: 100vw;
+        height: 400px;
+        /*background-color: #683a24;*/
+        display: flex;
+        justify-content: center;
+    }
+    
+    #qualificacoes .div-principal {
+        width: 900px;
+        height: 100%;
+        /*background-color: #506824;*/
+        display: flex;
+    }
+    
+    #qualificacoes .div-01 {
+        width: 45%;
+        height: 100%;
+        /*background-color: #246824;*/
+        text-align: end;
+        padding-right: 20px;
+    }
+    
+    #qualificacoes .div-02 {
+        width: 25%;
+        height: 100%;
+        /*background-color: #682459;*/
+    }
+    
+    #qualificacoes .div-03 {
+        width: 10%;
+        height: 100%;
+        /*background-color: #246824;*/
+        text-align: start;
+        padding-left: 0px;
+    }
+    
+    #qualificacoes .div-p-barra {
+        padding-right: 0px;
+        padding-bottom: 20px;
+        padding-top: 2px;
+    }
+    
+    .barra {
+        border-radius: 30px;
+        margin-top: 7px;
+    }
+    
+    .div-barra {
+        width: 90px;
+        height: 10px;
+        background-color: #29343b;
+        border: 10px;
+        margin-bottom: 32px;
+        border-radius: 30px;
+    }
+    
+    .div-barra .barra {
+       height: 100%;
+       background-color: #0086f4;
+       animation: progress-animation 40s ease-in-out;
+    }    
+
+    #qualificacoes p {
+        font-size: 15px;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    #qualificacoes .p-barra-p {
+        padding-bottom: 6;
+        text-align: end;
+    }
+
+    /* MAIN TOTAL */
+
+    .div-h2 {
+        width: 100%;
+        height: 50px;
+        padding-top: 50px;
+    }
+    
+    .texto-h2 {
+        font-size: 25px;
+        color: #0086f4;
+        font-family: "Prometo";
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        width: 100vw;
+        height: 300px;
+        background-color: #0086f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #div-footer .div-h2 {
+        margin-top: 50px;
+        padding-top: 50px;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    
+    #div-footer h2 {
+        color: white;
+    }
+    
+    #footer .div-icon {
+        height: 110px;
+        display: flex;
+    }
+    
+    .tamanho-icon {
+        height: 55px;
+        padding-bottom: 0;
+    }
+    
+    #footer i {
+        font-size: 30px;
+    }
+    
+}
