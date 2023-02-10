@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Prometo";
-    src: url("/FONTE/Prometo/Prometo-Medium.ttf")
+    src: url("../FONTE/Prometo/Prometo-Medium.ttf")
     format("truetype");
     font-style: normal;
     font-size: normal;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Jessicha";
-    src: url("/FONTE/Prometo/Jesicha\ Martine.otf")
+    src: url("../FONTE/Prometo/Jesicha\ Martine.otf")
     format("opentype");
     font-style: normal;
     font-size: normal;
@@ -28,44 +28,7 @@ body {
 
 header {
     font-family: "Prometo";
-    /*font-family: "jessicha"; */
 }
-
-/* NAV */
-/*
-.nav-bar {
-    position: fixed;
-    width: 100vw;
-    height: 60px;    
-}
-
-.container-nav-bar {
-    background-color: #0086f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.nav-ul {
-    display: flex;
-    justify-content: center;
-}
-
-.ul-nav-bar {
-    list-style: none;
-    display: flex;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    left: 50%;
-    gap: 2rem;
-}
-
-.li-nav-bar {
-    text-align: center;
-}*/
 
 .nav-bar {
     display: none;
@@ -118,7 +81,6 @@ header {
     margin: 8px;
 }
 
-/*00000000000000000000000000000000000000000000000000000000000000000000000000000000*/
 a {
     color:white;
     display: block;
@@ -150,7 +112,7 @@ a:hover:before {
 #header-imagem {
     width: 100vw;
     height: 900px;
-    background-image: url("../imagens/IMAGEM - header.png");
+    background-image: url("../imagens/IMAGEM\ -\ header.png");
     background-size: cover;
     background-position: center center;
     display: flex; 
@@ -712,51 +674,6 @@ footer {
         transition: transform 0.3s ease-in;
 
     }
-
-    /*.nav-bar {
-        display: none;
-    }
-
-    #div-menu-mobile a {
-        color: white ;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    #div-menu-mobile a:hover {
-        opacity: 07;
-    };
-
-    #div-menu-mobile .logo {
-        font-size: 24px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-    }
-
-    #div-menu-mobile {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #0086f4;
-        height: 8vh;
-    }
-
-    .nav-list {
-        list-style: none;
-        display: flex;
-    }
-
-    .mobile-menu {
-        cursor: pointer;
-        height: 50px;
-    }
-
-    .mobile-menu div{
-        width: 32px;
-        height: 2;
-        background-color: #ffffff;
-        margin: 8px;
-    }*/
 
     /* IMAGEM */
 
