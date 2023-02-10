@@ -150,7 +150,7 @@ a:hover:before {
 #header-imagem {
     width: 100vw;
     height: 900px;
-    background-image: url("/imagens/IMAGEM\ -\ header.png");
+    background-image: url("imagens/IMAGEM - header.png");
     background-size: cover;
     background-position: center center;
     display: flex; 
