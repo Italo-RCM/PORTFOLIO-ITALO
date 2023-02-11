@@ -592,9 +592,9 @@ footer {
 
 
 
+/*BARRA NAV BAR MOBILE*/
 
-
-@media (max-width: 660px) {
+@media (max-width: 1120px) {
 
     .nav-list {
         position: absolute;
@@ -649,12 +649,298 @@ footer {
       }
 }
 
-/*LAYOUT CELULAR 360px*/
 
-@media screen and (max-width: 361px) {
+/*LAYOUT TABLET 844*/
+
+@media screen and (max-width: 885px) {
 
     body {
-        width: 360px;
+        width: 100VW;
+    }
+
+    header {
+        width: 100%;
+        height: 992px;
+    }
+
+    .boas-vindas {
+        width: 380px;
+        height: 150px;
+        margin-top: 110px;
+        margin-left: 35px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* MAIN */
+
+    /* SOBRE */
+
+    #sobre .div-01 {
+        top: 50px;
+        left: 80px;
+        padding-top: 60px;
+    }
+
+    /* HABILIDADES */
+
+    #habilidades {
+        width: 100vw;
+        height: 850px;
+    }
+
+    #habilidades .div-h2 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #habilidades .texto-h2 {
+        width: 50%;
+    }
+
+    #habilidades .div-principal {
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #habilidades .div-01 {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    #habilidades .div-container-principal {
+        width: 100vw;
+        height: 400px;
+        padding-top: 0px;
+        padding-left:0px ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #habilidades .div-container {
+        width: 488px;
+        padding-top: 78px;
+    }
+    
+    #habilidades .div-container:hover > :not(:hover) {
+        opacity: .4;
+        transform: scale(0.8);
+    }
+    
+    #habilidades .item {
+        width: 80px;
+        height: 80px;
+        transition: .40s;
+        cursor: pointer;
+        margin: 12px;
+        flex: 1 1 150px;
+        display: inline-block;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+    
+    #habilidades .titulo-item {
+        width: 100px;
+        height: 30px;
+    }
+    
+    #habilidades .p-item {
+        text-align: center;
+        padding-top: 20px;
+        font-family: "Prometo";
+        color: #0086f4;
+        font-size: 15px;
+    }
+    
+    #habilidades .logo-item {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #habilidades .img-01 {
+        width: 49px;
+        height: 39px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-02 {
+        width: 55px;
+        height: 41px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-03 {
+        width: 68px;
+        height: 40px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-04 {
+        width: 55px;
+        height: 42px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-05 {
+        width: 62px;
+        height: 59px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-06 {
+        width: 63px;
+        height: 60px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-07 {
+        width: 48px;
+        height: 63px;
+        padding-top: 20px;
+    } 
+    #habilidades .img-08 {
+        width: 54px;
+        height: 64px;
+        padding-top: 20px;
+    }
+    
+    #habilidades .div-02 {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #habilidades .div-p {
+        margin-top: 13px;
+        width: 450px;
+        padding-left: 40px;
+    }
+    
+    #habilidades .p-texto {
+        top: 10%;
+        left: 25%;
+        font-family: "Prometo";
+        font-size: 15px;
+    }
+
+}
+
+/*LAYOUT TABLET 762px*/
+
+@media screen and (max-width: 762px) {
+
+    body {
+        width: 100vw;
+    }
+
+    /* MAIN */
+
+    /* SOBRE */
+
+    #sobre {
+        width: 100%;
+        height: 800px;
+        background-color: #212529;
+    }    
+    
+    #sobre .div-h2-top {
+        width: 100%;
+        height: 100px;
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #sobre .texto-h2 {
+        width: 150px;
+        font-size: 25px;
+        color: #0086f4;
+        font-family: "Prometo";
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #sobre .div-sobre-centro {
+        width: 100%;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #sobre .div-total {
+        width: 300px;
+        height: 200px;
+    }
+    
+    #sobre .div-01 {
+        top: -30px;
+        left: 0;
+    }
+    
+    #sobre .div-02 {
+        width: 460px;
+        height: 50%; 
+        font-family: "Prometo";
+        padding-top: 50px;
+    }
+    
+    #sobre .p-nome-01 {
+        font-size: 20px;
+        color: #0086f4;
+        text-align: left;
+        font-family: "Prometo";
+    }
+    
+    #sobre .p-nome-02 {
+        font-size: 15px;
+        color: #ffffff;
+        text-align: left;
+        font-family: "Prometo";
+    }
+    
+    #sobre .div-p-total {
+        width: 100%;
+        height: 300px; 
+    }
+    
+    #sobre .div-p {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 40px;
+    }
+
+    #sobre .div-p-01 {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 40px;
+    }
+    
+    #sobre .p-texto {
+        top: 10%;
+        left: 25%;
+        align-items: center;
+        font-family: "Prometo";
+        font-size: 15px;
+    }
+
+}
+
+/*LAYOUT CELULAR 428px*/
+
+@media screen and (max-width: 428px) {
+
+    body {
+        width: 100vw;
     }
 
     header {
@@ -684,7 +970,7 @@ footer {
     #header-imagem {
         width: 100%;
         height: 100%;
-        background-image: url("/imagens/IMAGEM\ -\ header\ -\ MOBAIL.png");
+        background-image: url("../imagens/IMAGEM\ -\ header\ -\ MOBAIL.png");
     }
 
     .boas-vindas {
@@ -715,7 +1001,7 @@ footer {
 
     #sobre {
         width: 100%;
-        height: 700px;
+        height: 800px;
         background-color: #212529;
     }    
     
@@ -751,7 +1037,7 @@ footer {
     }
     
     #sobre .div-01 {
-        top: 50px;
+        top: -30px;
         left: 0;
     }
     
@@ -850,6 +1136,7 @@ footer {
 
     #habilidades .div-container {
         width: 250px;
+        padding-top: 0;
     }
     
     #habilidades .div-container:hover > :not(:hover) {
