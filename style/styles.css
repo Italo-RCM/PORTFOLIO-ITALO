@@ -22,12 +22,19 @@ body {
     margin: 0;
     background-color: #212529;
     width: 100vw;
+    transition: background 0.2s linear;
+}
+
+body, html {
+    overflow-x: hidden !important;
 }
 
 /* HEADER */
 
 header {
     font-family: "Prometo";
+    width: 100vw;
+    height: 900px;
 }
 
 .nav-bar {
@@ -55,7 +62,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #0086f4;
-    height: 8vh;
+    height: 60px;
 }
 
 .nav-list {
@@ -107,32 +114,161 @@ a:hover:before {
     width: 100%;
 }
 
+/* DARK MODE*/
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    left: auto;
+    background-color: #0086f4;
+    width: 3.5em;
+    height: 2em;
+}
+
+.dark .switch {
+    transition: background 0.2s linear;
+    background-color: #dfdfdf;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    --background: #dfdfdf;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #212529;
+    background: var(--background);
+    transition: .5s;
+}
+  
+input:checked + .slider {
+    background-color: #0086f4;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #212529;
+}
+
+body.dark {
+    background-color: #FFF;
+}
+
+.dark #div-menu-mobile {
+    transition: background 0.2s linear;
+    background-color: #dfdfdf;
+}
+
+.dark #div-menu-mobile a {
+    transition: background 0.2s linear;
+    color: #212529 ;
+}
+
+.dark a {
+    transition: background 0.2s linear;
+    color: #212529;
+}
+
+.dark a:before {
+    background-color: #212529;
+}
+
+.dark #header-imagem {
+    transition: background 0.2s linear;
+    background-image: url("../imagens/IMAGEM\ -\ header02.png");
+}
+
+.dark h1 {
+    color: #212529;
+}
+
+.dark h2 {
+    color: #212529;
+}
+
+.dark p {
+    color: #212529;
+}
+
+.dark #sobre .p-nome-02 {
+    color: #212529;
+}
+
+.dark #habilidades .p-item {
+    color: #212529;
+}
+
+.dark #habilidades .img-01 {
+    color: #212529;
+}
+
+.dark #sobre {
+    transition: background 0.2s linear;
+    background-color: #f6f6f6;
+}
+
+.dark #habilidades {
+    transition: background 0.2s linear;
+    background-color: #dfdfdf
+}
+
+.dark #qualificacoes {
+    transition: background 0.2s linear;
+    background-color: #f6f6f6;
+}
+
+.dark #footer {
+    transition: background 0.2s linear;
+    background-color: rgb(163, 163, 163);
+}
+
 /*IMAGEM*/
 
 #header-imagem {
     width: 100vw;
-    height: 900px;
+    height: 858px;
     background-image: url("../imagens/IMAGEM\ -\ header.png");
     background-size: cover;
     background-position: center center;
     display: flex; 
-}
+ }
 
-.boas-vindas {
-    width: 400px;
+ .boas-vindas {
+    width: 500px;
     height: 250px;
-    margin-top: 450px;
-    margin-left: 200px;
-    font-size: 30PX;
+    padding-left: 200px;
+    padding-top: 275px;
+    font-size: 30px;
     text-align: center;
-}
+ }
 
-p {
+ p {
     color: white;
     margin: 0;
-}
+ }
  
-h1 {
+ h1 {
     color: #0086f4;
     font-family: "jessicha";
     font-size: 80px;
@@ -512,6 +648,7 @@ label {
     position: relative;
     overflow: hidden;
     display: grid;
+    font-family: "Prometo";
    }
    
    input + label .action span {
@@ -663,6 +800,15 @@ footer {
         height: 992px;
     }
 
+    body, html {
+        overflow-x: hidden !important;
+    }
+
+    #header-imagem {
+        height: 935px;
+    }
+
+
     .boas-vindas {
         width: 380px;
         height: 150px;
@@ -670,6 +816,8 @@ footer {
         margin-left: 35px;
         font-size: 30px;
         text-align: center;
+        padding-left: 53px;
+        padding-top: 220px;
     }
 
     /* MAIN */
@@ -837,6 +985,10 @@ footer {
         width: 100vw;
     }
 
+    body, html {
+        overflow-x: hidden !important;
+    }
+
     /* MAIN */
 
     /* SOBRE */
@@ -935,9 +1087,9 @@ footer {
 
 }
 
-/*LAYOUT CELULAR 428px*/
+/*LAYOUT CELULAR 429px*/
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 429px) {
 
     body {
         width: 100vw;
@@ -946,6 +1098,10 @@ footer {
     header {
         width: 100%;
         height: 660px;
+    }
+
+    body, html {
+        overflow-x: hidden !important;
     }
 
     /*NAV MOBILE*/
@@ -965,6 +1121,10 @@ footer {
 
     }
 
+    .mobile-menu {
+        height: 35px;
+    }
+
     /* IMAGEM */
 
     #header-imagem {
@@ -973,13 +1133,19 @@ footer {
         background-image: url("../imagens/IMAGEM\ -\ header\ -\ MOBAIL.png");
     }
 
+    .dark #header-imagem {
+        transition: background 0.2s linear;
+        background-image: url("../imagens/IMAGEM\ -\ header\ -\ MOBAIL02.png");
+    }
+
     .boas-vindas {
         width: 200px;
         height: 150px;
-        margin-top: 110px;
+        margin-top: 61px;
         margin-left: 80px;
         font-size: 15PX;
         text-align: center;
+        padding-top: 0;
     }
 
     h1 {
@@ -1034,10 +1200,11 @@ footer {
     #sobre .div-total {
         width: 300px;
         height: 200px;
+        margin-bottom: 35px;
     }
     
     #sobre .div-01 {
-        top: -30px;
+        top: -46px;
         left: 0;
     }
     
@@ -1069,6 +1236,7 @@ footer {
     
     #sobre .div-p {
         margin-top: 0;
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1246,7 +1414,6 @@ footer {
     }
     
     #qualificacoes .div-h2-qualificacoes {
-        /*background-color: #0fd439;*/
         width: 100%;
         height: 150px;
     }
@@ -1254,7 +1421,6 @@ footer {
     #qualificacoes .div-barra-principal {
         width: 100vw;
         height: 400px;
-        /*background-color: #683a24;*/
         display: flex;
         justify-content: center;
     }
@@ -1262,14 +1428,12 @@ footer {
     #qualificacoes .div-principal {
         width: 900px;
         height: 100%;
-        /*background-color: #506824;*/
         display: flex;
     }
     
     #qualificacoes .div-01 {
         width: 45%;
         height: 100%;
-        /*background-color: #246824;*/
         text-align: end;
         padding-right: 20px;
     }
@@ -1277,13 +1441,11 @@ footer {
     #qualificacoes .div-02 {
         width: 25%;
         height: 100%;
-        /*background-color: #682459;*/
     }
     
     #qualificacoes .div-03 {
         width: 10%;
         height: 100%;
-        /*background-color: #246824;*/
         text-align: start;
         padding-left: 0px;
     }
@@ -1377,4 +1539,14 @@ footer {
         font-size: 30px;
     }
     
+}
+
+@media screen and (max-width: 391px) {
+
+    .boas-vindas {
+        padding-left: 0;
+        margin-left: 93px;
+    }
+
+
 }
