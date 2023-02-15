@@ -1151,7 +1151,11 @@ footer {
         transition: transform 0.3s ease-in;
         padding-left: 0;
 
-        display: block;
+        display: none;
+    }
+
+    #id-nav-list {
+        display: none;
     }
 
     .nav-list li {
@@ -1165,7 +1169,8 @@ footer {
     }
 
     .mobile-menu {
-        display: block;
+       /* display: block;*/
+        display: none;
     }
 
     /* IMAGEM */
