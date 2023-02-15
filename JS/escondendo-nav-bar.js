@@ -1,10 +1,10 @@
-var btn = document.getElementById('nav-list');
-var container = document.querySelector('.nav-list');
+var btn = document.getElementById('mobile-menu');
+var container = document.querySelector('.nav-list.active');
 btn.addEventListener('click', function() {
     
-  if(container.style.display === 'none') {
-      container.style.display = 'block';
-  } else {
+  if(container.style.display === 'block') {
       container.style.display = 'none';
+  } else {
+      container.style.display = 'block';
   }
 });
