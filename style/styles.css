@@ -1655,11 +1655,22 @@ footer {
     }
 
     .div-projetos {
-        height: 450px;
+        height: 500px;
         justify-content: flex-start;
         align-items: flex-start;
         overflow: hidden;
         overflow-x: scroll;
+    }
+
+    .div-projetos::-webkit-scrollbar {
+        width: 3px;
+        background-color: #191f27;
+        border-radius: 10px;
+    }
+
+    .div-projetos::-webkit-scrollbar-thumb {
+        background-color: #0086f4;
+        border-radius: 10px;
     }
 
     /* QUALIFICAÇÕES */
