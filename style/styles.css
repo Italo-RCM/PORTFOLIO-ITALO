@@ -254,6 +254,11 @@ body.dark {
     background-color: #dfdfdf
 }
 
+.dark #projetos {
+    transition: background 0.2s linear;
+    background-color: #c4c4c4
+}
+
 .dark #qualificacoes {
     transition: background 0.2s linear;
     background-color: #f6f6f6;
@@ -605,6 +610,11 @@ body.dark {
     box-shadow: 0px 0px 30px 1px rgba(0, 183, 255, 0.3);
 }
 
+.dark .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 153, 255, 0.3);
+}
+
+
 .img-projetos {
     width: 175px;
     border-radius: 5px;
@@ -614,6 +624,10 @@ body.dark {
 .p-projetos {
     font-family: "Prometo";
     margin-top: 25px;
+}
+
+.dark .p-projetos {
+    color: #f6f6f6;
 }
 
 .p2-projetos {
