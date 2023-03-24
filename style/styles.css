@@ -29,6 +29,12 @@ body, html {
     overflow-x: hidden !important;
 }
 
+
+
+
+
+
+
 /* HEADER */
 
 header {
@@ -113,6 +119,13 @@ a:before {
 a:hover:before {
     width: 100%;
 }
+
+
+
+
+
+
+
 
 /* DARK MODE*/
 
@@ -251,6 +264,11 @@ body.dark {
     background-color: rgb(163, 163, 163);
 }
 
+
+
+
+
+
 /*IMAGEM*/
 
 #header-imagem {
@@ -287,6 +305,14 @@ body.dark {
      2px -2px 0px #FFF,    
      2px 0px 0px #FFF;
 }
+
+
+
+
+
+
+
+
 
 /* MAIN TOTAL*/
 
@@ -365,6 +391,24 @@ body.dark {
     font-family: "Prometo";
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* MAIN HABILIDADES */
 
@@ -494,6 +538,103 @@ body.dark {
     font-size: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PROJETOS*/
+
+#projetos{
+    width: 100vw;
+    height: 720px;
+    background-color: #222a35;
+}
+
+#projetos-h2 {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.div-projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card {
+    width: 190px;
+    height: 254px;
+    /*background-image: linear-gradient(163deg, #0086f4 0%, #00eeff 100%);*/
+    background-image: linear-gradient(163deg, #c2e3ff 0%, #ffffff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    margin: 20px;
+}
+   
+.card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+   
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+   
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 183, 255, 0.3);
+}
+
+.img-projetos {
+    width: 175px;
+    border-radius: 5px;
+    margin-top: 11px;
+}
+
+.p-projetos {
+    font-family: "Prometo";
+    margin-top: 25px;
+}
+
+.p2-projetos {
+    font-family: "Prometo";
+    margin-top: 50px;
+    font-size: 13px;
+    padding-left: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAIN QUALIFICACOES */
 
 #qualificacoes {
@@ -572,6 +713,13 @@ body.dark {
       }
 }
 
+
+
+
+
+
+
+
 /* MAIN TOTAL */
 
 .div-h2 {
@@ -587,6 +735,14 @@ body.dark {
     text-align: center;
     margin-top: 0;
 }
+
+
+
+
+
+
+
+
 
 /* ÍCONE CORAÇÃO */
 .div-icone-pai {
@@ -681,6 +837,17 @@ label {
     opacity: 1;
    }
    
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
@@ -799,6 +966,9 @@ footer {
         transform: rotate(45deg) translate(-5px, -7px);
       }
 }
+
+
+
 
 
 
