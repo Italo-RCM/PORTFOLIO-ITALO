@@ -1651,12 +1651,15 @@ footer {
 
     #projetos-h2 {
         padding-top: 62px;
-        padding-bottom: 0px;
+        padding-bottom: 30px;
     }
 
     .div-projetos {
-        height: 525px;
-        overflow-X: auto;
+        height: 450px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+        overflow-x: scroll;
     }
 
     /* QUALIFICAÇÕES */
